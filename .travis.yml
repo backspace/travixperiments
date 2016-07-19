@@ -1,21 +1,8 @@
-language: ruby
-rvm:
-  - "2.3.0"
-  - "2.3"
-  - "2.3.1"
-  - "2.2"
-  - 2.1.9
-  - "jruby-head"
+language: python
 sudo: false
-before_install:
-  - rvm get stable --auto-dotfiles
-  - gem install bundler
-  - nvm list
+install:
+  - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --force-yes install libav-tools libavcodec-extra-56
 script:
-  - rvm -v
-  - rvm alias list
-  - ruby -v
-  - rvm list
-  - ruby test.rb
+  - echo 'jorts'
 notifications:
   email: false
