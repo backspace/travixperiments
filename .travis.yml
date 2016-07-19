@@ -1,5 +1,6 @@
 language: python
-sudo: true
+sudo: required
+dist: trusty
 install:
   - sudo apt-get update
   - sudo -E apt-get -yq --no-install-suggests --no-install-recommends --force-yes install libav-tools libavcodec-extra-56
